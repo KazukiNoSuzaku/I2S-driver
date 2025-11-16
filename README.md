@@ -10,23 +10,23 @@
 
 ## 2. System Daemon (i2sd.c) - Background service that:
 
-Runs as a systemd service
-Manages the I2S device
-Provides Unix domain socket for IPC
-Handles control commands and status queries
-Logs to syslog
+* Runs as a systemd service
+* Manages the I2S device
+* Provides Unix domain socket for IPC
+* Handles control commands and status queries
+* Logs to syslog
 
 
-User Space Library (libi2s.h & libi2s.c) - Clean API that:
+## 3.User Space Library (libi2s.h & libi2s.c) - Clean API that:
 
-Provides simple functions to open/close I2S device
-Configure sample rate, bit depth, channels
-Start/stop transmission
-Read/write audio data
-Communicate with daemon
+* Provides simple functions to open/close I2S device
+* Configure sample rate, bit depth, channels
+* Start/stop transmission
+* Read/write audio data
+* Communicate with daemon
 
 
-Example Application (i2s_example.c) - Demonstrates:
+## 4. Example Application (i2s_example.c) - Demonstrates:
 
 Opening and configuring I2S device
 Generating sine wave audio
